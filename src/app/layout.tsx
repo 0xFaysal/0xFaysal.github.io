@@ -28,6 +28,9 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   title: profileTitle,
   description: profileDescription,
+  verification: {
+    google: "MfvQoUK50biCzclVUrJ7yEfpr7ZCH7UH0-6247C_FRE",
+  },
   authors: [{ name: portfolioData.name, url: siteUrl }],
   creator: portfolioData.name,
   metadataBase: new URL(siteUrl),
