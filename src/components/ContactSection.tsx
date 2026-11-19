@@ -13,7 +13,7 @@ export function ContactSection() {
       </div>
 
       <p className="max-w-[50ch] leading-relaxed text-muted-foreground">
-        For frontend internship and junior developer opportunities, reach me by email or on LinkedIn.
+        I’m open to junior full-stack roles and software engineering internships. Reach me by email or on LinkedIn.
       </p>
 
       <a

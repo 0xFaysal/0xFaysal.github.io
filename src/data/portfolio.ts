@@ -70,7 +70,7 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: "Faysal Ahmed Fahim",
   shortName: "Faysal",
-  title: "Frontend Developer",
+  title: "Full-Stack Developer",
   location: "Dhaka, Bangladesh",
   timeZone: "Asia/Dhaka",
   email: "faysalfahim3@gmail.com",
@@ -154,7 +154,7 @@ export const portfolioData: PortfolioData = {
       featured: true,
       role: "Full-Stack Developer",
       description:
-        "Developed map-based search and booking for shared residential parking in Dhaka. The project uses PostgreSQL transactions to coordinate reservation holds.",
+        "Built map-based search and worked on the booking flow for shared residential parking in Dhaka. The platform connects a Next.js interface to a Node.js API and uses PostgreSQL transactions to coordinate reservation holds.",
       tags: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "Node.js", "Tailwind CSS"],
       url: "https://parkease-bd.vercel.app",
       githubUrl: "https://github.com/0xFaysal/se-lab-wake-up-to-reality",

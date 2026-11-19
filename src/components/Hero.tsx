@@ -27,10 +27,10 @@ export function Hero() {
       </div>
       <div className="mt-5 max-w-[62ch] space-y-3 leading-relaxed text-foreground/90 sm:text-[17px]">
         <p>
-          I’m a frontend developer in Dhaka and a Computer Science and Engineering
-          student at United International University. I work mostly with React,
-          Next.js, and TypeScript, and I enjoy building interfaces for products
-          where the UI has to keep up with changing data.
+          I’m a full-stack developer in Dhaka and a Computer Science and Engineering
+          student at United International University. I build web applications
+          with Next.js, TypeScript, Node.js, and PostgreSQL, connecting the
+          interface people use to the APIs and data behind it.
         </p>
         <p>
           I interned at <a href="#experience" className="underline underline-offset-4">Algoel</a>,
@@ -40,10 +40,15 @@ export function Hero() {
         </p>
         <p>
           On <a href="#parkease-bd" className="underline underline-offset-4">ParkEase BD</a>,
-          I built map-based search and booking so drivers can find and reserve
-          shared residential parking in Dhaka. I also led Team XEN’s technical work on{" "}
+          I built map-based search and worked on the reservation flow, which uses
+          PostgreSQL transactions to coordinate booking holds. I also led Team XEN’s technical work on{" "}
           <a href="#heliobay" className="underline underline-offset-4">HelioBay</a>,
           a solar EV charging project that won a national gold medal at FIRSO Bangladesh.
+        </p>
+        <p>
+          I’m currently exploring cybersecurity and machine learning, with an
+          interest in securing web applications and understanding how models
+          are trained and evaluated.
         </p>
       </div>
 

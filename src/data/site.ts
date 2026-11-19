@@ -4,6 +4,6 @@ export const siteUrl = new URL(
   process.env.SITE_URL || "https://0xfaysal.github.io/",
 ).origin + "/";
 
-export const profileTitle = `${portfolioData.name} | Frontend Developer in Dhaka`;
+export const profileTitle = `${portfolioData.name} | ${portfolioData.title} in Dhaka`;
 export const profileDescription =
-  "Portfolio of Faysal Ahmed Fahim (0xFaysal), a frontend developer in Dhaka working with React, Next.js, and TypeScript. Explore ParkEase BD, HelioBay, and UNO-Mates.";
+  "Faysal Ahmed Fahim (0xFaysal) is a full-stack developer in Dhaka working with Next.js, TypeScript, Node.js, and PostgreSQL. Explore ParkEase BD, HelioBay, and UNO-Mates.";

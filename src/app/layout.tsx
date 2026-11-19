@@ -20,10 +20,10 @@ const sansFont = Inter({
 });
 
 const socialPreview = {
-  url: "/social-preview.png",
+  url: "/social-preview-full-stack.png",
   width: 1200,
   height: 630,
-  alt: "ASCII portrait of Faysal Ahmed Fahim beside his name and frontend developer title",
+  alt: "ASCII portrait of Faysal Ahmed Fahim beside his name and full-stack developer title",
 };
 
 export const metadata: Metadata = {
