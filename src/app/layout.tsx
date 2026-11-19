@@ -25,6 +25,13 @@ const monoFont = JetBrains_Mono({
   display: "swap",
 });
 
+const socialPreview = {
+  url: "/social-preview.png",
+  width: 1200,
+  height: 630,
+  alt: "ASCII portrait of Faysal Ahmed Fahim beside his name and frontend developer title",
+};
+
 export const metadata: Metadata = {
   title: profileTitle,
   description: profileDescription,
@@ -37,6 +44,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48 96x96" },
+      { url: "/icon-96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+  },
   openGraph: {
     title: profileTitle,
     description: profileDescription,
@@ -44,11 +58,14 @@ export const metadata: Metadata = {
     siteName: portfolioData.name,
     locale: "en_US",
     type: "profile",
+    images: [{ ...socialPreview, type: "image/png" }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: profileTitle,
     description: profileDescription,
+    creator: "@0xFaysal_",
+    images: [socialPreview],
   },
 };
 
@@ -80,6 +97,7 @@ const jsonLd = {
       alternateName: "0xFaysal",
       url: siteUrl,
       jobTitle: portfolioData.title,
+      image: new URL("/ascii-portrait-closeup.svg", siteUrl).href,
       nationality: { "@type": "Country", name: "Bangladesh" },
       address: {
         "@type": "PostalAddress",
