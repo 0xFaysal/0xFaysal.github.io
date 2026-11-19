@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 import { portfolioData, type Project } from "@/data/portfolio";
+import { ProjectHoverPreview } from "./ProjectHoverPreview";
 
 function ProjectEntry({ project }: { project: Project }) {
   return (
     <li className="border-t border-border py-5">
-      <article id={project.id}>
+      <article id={project.id} data-project-preview={project.previewImage}>
         <h3 className="font-serif text-2xl leading-tight">{project.title}</h3>
         <p className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm text-muted-foreground">
           <span>{project.role}</span>
@@ -47,6 +48,7 @@ export function WorkSection() {
           {additional.map((project) => <ProjectEntry key={project.title} project={project} />)}
         </ul>
       </details>
+      <ProjectHoverPreview />
     </section>
   );
 }

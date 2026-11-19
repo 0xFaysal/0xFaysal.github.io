@@ -7,6 +7,7 @@ export interface Project {
   description: string;
   tags: string[];
   url?: string;
+  previewImage?: string;
   githubUrl?: string;
 }
 
@@ -157,6 +158,7 @@ export const portfolioData: PortfolioData = {
         "Built map-based search and worked on the booking flow for shared residential parking in Dhaka. The platform connects a Next.js interface to a Node.js API and uses PostgreSQL transactions to coordinate reservation holds.",
       tags: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "Node.js", "Tailwind CSS"],
       url: "https://parkease-bd.vercel.app",
+      previewImage: "/project-previews/parkease-bd.webp",
       githubUrl: "https://github.com/0xFaysal/se-lab-wake-up-to-reality",
     },
     {
@@ -169,6 +171,7 @@ export const portfolioData: PortfolioData = {
         "Led Team XEN’s work on a solar EV charging platform and integrated dashboards for live IoT telemetry and automated charging control. The project won a national gold medal in Green Tech.",
       tags: ["Green Tech", "Solar Energy", "Next.js", "TypeScript", "IoT & Embedded", "EV Charging"],
       url: "https://heliobay.vercel.app/",
+      previewImage: "/project-previews/heliobay.webp",
       githubUrl: "https://github.com/0xFaysal/HelioBay",
     },
     {
@@ -180,6 +183,7 @@ export const portfolioData: PortfolioData = {
         "Built a real-time card game for 2–10 players with synchronized rooms and turn validation. Used Zustand for optimistic UI updates and Playwright to test multiplayer behavior.",
       tags: ["Next.js 16", "TypeScript", "Supabase", "Zustand", "Tailwind CSS", "Playwright"],
       url: "https://uno-mates.vercel.app",
+      previewImage: "/project-previews/uno-mates.webp",
       githubUrl: "https://github.com/0xFaysal/UNO-Mates",
     },
     {
@@ -189,6 +193,7 @@ export const portfolioData: PortfolioData = {
         "A Bangladeshi fintech platform converting informal store credit ('Baki') into portable, verifiable credit scores to empower local merchants and consumers.",
       tags: ["Next.js", "TypeScript", "GSAP", "Zustand", "Express.js", "Tailwind CSS"],
       url: "https://sohojogi.vercel.app/",
+      previewImage: "/project-previews/sohojogi.webp",
       githubUrl: "https://github.com/0xFaysal/Sohojogi-frontend",
     },
     {
