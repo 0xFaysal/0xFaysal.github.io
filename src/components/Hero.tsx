@@ -56,9 +56,11 @@ export function Hero() {
         </a>
       </div>
 
-      <nav aria-label="Professional profiles" className="mt-4 flex flex-wrap items-center gap-x-5 text-sm text-muted-foreground">
+      <nav aria-label="Social profiles and email" className="mt-4 flex flex-wrap items-center gap-x-5 text-sm text-muted-foreground">
         <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.github}>GitHub</a>
         <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.linkedin}>LinkedIn</a>
+        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.x}>X</a>
+        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.facebook}>Facebook</a>
         <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.email}>Email</a>
       </nav>
     </section>

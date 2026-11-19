@@ -89,6 +89,8 @@ const jsonLd = {
       sameAs: [
         portfolioData.socials.github,
         portfolioData.socials.linkedin,
+        portfolioData.socials.x,
+        portfolioData.socials.facebook,
         portfolioData.socials.instagram,
       ].filter(Boolean),
       affiliation: {

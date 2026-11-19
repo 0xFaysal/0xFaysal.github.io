@@ -54,7 +54,8 @@ export interface PortfolioData {
   socials: {
     github: string;
     linkedin: string;
-    twitter?: string;
+    x: string;
+    facebook: string;
     instagram?: string;
     email: string;
     cv: string;
@@ -77,6 +78,8 @@ export const portfolioData: PortfolioData = {
   socials: {
     github: "https://github.com/0xFaysal",
     linkedin: "https://www.linkedin.com/in/faysal-ahmed-fahim01",
+    x: "https://x.com/0xFaysal_",
+    facebook: "https://www.facebook.com/FaysalAhmedFAHlM",
     instagram: "https://www.instagram.com/faysal_fahim_/",
     email: "mailto:faysalfahim3@gmail.com",
     cv: "/resume.pdf",
