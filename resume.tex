@@ -5,6 +5,9 @@
 \usepackage{lmodern}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{pict2e}
+\usepackage{fontawesome5}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabularx}
 \usepackage[none]{hyphenat}
@@ -26,25 +29,34 @@
   \entry{#1}{#2}
   {\small #3\hfill #4}\par
 }
-\newcommand{\contactlink}[2]{%
-  \href{#1}{%
-    {\setlength{\unitlength}{1pt}\linethickness{0.55pt}%
-    \begin{picture}(10,6)(0,-0.5)
-      \put(2.75,2.75){\circle{3.5}}
-      \put(7.25,2.75){\circle{3.5}}
-      \put(3.5,2.75){\line(1,0){3}}
-    \end{picture}}\,\mbox{#2}}%
+\definecolor{gmailblue}{HTML}{4285F4}
+\definecolor{gmailgreen}{HTML}{34A853}
+\definecolor{gmailred}{HTML}{EA4335}
+\definecolor{gmailyellow}{HTML}{FBBC04}
+\definecolor{gmaildarkred}{HTML}{C5221F}
+\newcommand{\gmailicon}{%
+  {\setlength{\unitlength}{1pt}%
+  \begin{picture}(9,7)
+    {\color{gmailblue}\polygon*(0,0.5)(1.6,0.5)(1.6,4.9)(0,6.1)}%
+    {\color{gmailgreen}\polygon*(7.4,0.5)(9,0.5)(9,6.1)(7.4,4.9)}%
+    {\color{gmailred}\polygon*(1.6,6.8)(4.5,4.6)(7.4,6.8)(7.4,4.9)(4.5,2.7)(1.6,4.9)}%
+    {\color{gmaildarkred}\polygon*(0,6.3)(0.8,7)(1.6,6.8)(1.6,4.9)(0,6.1)}%
+    {\color{gmailyellow}\polygon*(7.4,6.8)(8.2,7)(9,6.3)(9,6.1)(7.4,4.9)}%
+  \end{picture}}%
+}
+\newcommand{\contactlink}[3]{%
+  \href{#2}{\makebox[11pt][c]{\small #1}\,\mbox{#3}}%
 }
 
 \begin{document}
 \begin{center}
   {\LARGE\bfseries Faysal Ahmed Fahim}\\[3pt]
   {\normalsize Frontend Developer | React, Next.js, TypeScript}\\[4pt]
-  {\small Dhaka, Bangladesh\enspace|\enspace
-  \contactlink{mailto:faysalfahim3@gmail.com}{faysalfahim3@gmail.com}\enspace|\enspace
-  \contactlink{https://0xfaysal.github.io/}{0xfaysal.github.io}\\[2pt]
-  \contactlink{https://github.com/0xFaysal}{github.com/0xFaysal}\enspace|\enspace
-  \contactlink{https://www.linkedin.com/in/faysal-ahmed-fahim01}{linkedin.com/in/faysal-ahmed-fahim01}}
+  {\small \faIcon{map-marker-alt}\, Dhaka, Bangladesh\enspace|\enspace
+  \contactlink{\gmailicon}{mailto:faysalfahim3@gmail.com}{faysalfahim3@gmail.com}\enspace|\enspace
+  \contactlink{\faIcon{globe}}{https://0xfaysal.github.io/}{0xfaysal.github.io}\\[2pt]
+  \contactlink{\faIcon{github}}{https://github.com/0xFaysal}{github.com/0xFaysal}\enspace|\enspace
+  \contactlink{\faIcon{linkedin}}{https://www.linkedin.com/in/faysal-ahmed-fahim01}{linkedin.com/in/faysal-ahmed-fahim01}}
 \end{center}
 \vspace{-5pt}
 
