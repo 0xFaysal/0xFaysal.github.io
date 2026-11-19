@@ -1,0 +1,93 @@
+% Frontend resume. Keep claims grounded in documented project work.
+\documentclass[letterpaper,11pt]{article}
+\usepackage[letterpaper,left=0.55in,right=0.55in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage[none]{hyphenat}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+\setlist[itemize]{leftmargin=13pt,labelsep=4pt,topsep=3pt,itemsep=2pt,parsep=0pt,partopsep=0pt}
+\hypersetup{pdftitle={Faysal Ahmed Fahim - Frontend Developer},pdfauthor={Faysal Ahmed Fahim}}
+
+\newcommand{\entry}[2]{%
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}\textbf{#1} & #2\end{tabularx}\par
+}
+\newcommand{\project}[4]{%
+  \entry{#1}{#2}
+  {\small #3\hfill #4}\par
+}
+
+\begin{document}
+\begin{center}
+  {\LARGE\bfseries Faysal Ahmed Fahim}\\[3pt]
+  {\normalsize Frontend Developer | React, Next.js, TypeScript}\\[4pt]
+  {\small Dhaka, Bangladesh\enspace|\enspace
+  \href{mailto:faysalfahim3@gmail.com}{faysalfahim3@gmail.com}\enspace|\enspace
+  \href{https://faysalahmed.me}{faysalahmed.me}\\[2pt]
+  \href{https://github.com/0xFaysal}{github.com/0xFaysal}\enspace|\enspace
+  \href{https://linkedin.com/in/faysal-ahmed-fahim01}{linkedin.com/in/faysal-ahmed-fahim01}}
+\end{center}
+\vspace{-5pt}
+
+\section{Experience}
+\entry{Front-End Developer Intern}{Apr 2025 -- Aug 2025}
+\textit{Algoel}\hfill Dhaka, Bangladesh
+\begin{itemize}\small
+  \item Built responsive product filtering, shopping cart, and checkout interfaces for an e-commerce platform using \textbf{React, TypeScript, and Tailwind CSS}.
+  \item Integrated \textbf{REST APIs} for authentication, product catalog data, and order status; participated in cross-browser quality assurance of e-commerce flows.
+  \item Collaborated in agile sprints on UI component refactoring and daily standups.
+\end{itemize}
+
+\section{Technical Projects}
+\project{UNO-Mates -- Real-Time Multiplayer Card Platform}{2026}
+  {Next.js, TypeScript, Supabase, Zustand, Playwright}
+  {\href{https://uno-mates.vercel.app}{\underline{Demo}}\enspace|\enspace\href{https://github.com/0xFaysal/UNO-Mates}{\underline{GitHub}}}
+\begin{itemize}\small
+  \item Built a 2--10 player card game with real-time room synchronization, persistent game state, and automated turn validation.
+  \item Implemented optimistic UI updates with \textbf{Zustand} and automated \textbf{Playwright end-to-end tests} for multiplayer game mechanics.
+\end{itemize}
+
+\project{HelioBay -- Smart Solar EV Charging Network}{2026}
+  {Next.js, TypeScript, Tailwind CSS, IoT}
+  {\href{https://heliobay.vercel.app/}{\underline{Demo}}\enspace|\enspace\href{https://github.com/0xFaysal/HelioBay}{\underline{GitHub}}}
+\begin{itemize}\small
+  \item Served as technical lead for Team XEN on a solar-first EV charging platform with battery monitoring and credit-based billing.
+  \item Integrated real-time IoT telemetry dashboards and automated charging control; the project won \textbf{Gold Medal at FIRSO Bangladesh 2026} in Green Tech.
+\end{itemize}
+
+\project{ParkEase BD -- Shared Residential Parking Platform}{2025}
+  {Next.js, TypeScript, PostgreSQL, Redis}
+  {\href{https://parkease-bd.vercel.app}{\underline{Demo}}\enspace|\enspace\href{https://github.com/0xFaysal/se-lab-wake-up-to-reality}{\underline{GitHub}}}
+\begin{itemize}\small
+  \item Developed a shared parking platform with geospatial search, instant booking, and interactive maps for finding and routing to residential parking spaces.
+  \item Worked on the parking reservation flow, which uses PostgreSQL transactions to coordinate booking holds.
+\end{itemize}
+
+\section{Technical Skills}
+{\small
+\textbf{Languages:} JavaScript (ES6+), TypeScript, HTML, CSS, SQL, Python, Java, C/C++\\[2pt]
+\textbf{Frontend:} React, Next.js (App Router), Tailwind CSS, Zustand, GSAP, Responsive Design\\[2pt]
+\textbf{Backend \& Data:} Node.js, Express.js, REST APIs, WebSockets, PostgreSQL, MongoDB, Redis, Supabase, Firebase\\[2pt]
+\textbf{Tools \& Testing:} Git, GitHub, Playwright, Postman, Linux/Bash, Figma
+}
+
+\section{Education}
+\entry{United International University (UIU)}{2023 -- Present}
+{\small Bachelor of Science in Computer Science and Engineering\hfill Dhaka, Bangladesh}
+
+\section{Honors \& Achievements}
+{\small
+\textbf{FIRSO Bangladesh 2026:} Gold Medal, University Green Tech; selected to represent Bangladesh at the Global Final in Rome, Italy.\hfill Sep 2026\par\vspace{3pt}
+\textbf{Data Privacy Avengers -- Robi Axiata PLC:} National Top 20 Finalist, Team Incognito Unit.\hfill Nov 2026
+}
+\end{document}
