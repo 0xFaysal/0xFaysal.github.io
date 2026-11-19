@@ -27,28 +27,30 @@ export function Hero() {
       </div>
       <div className="mt-5 max-w-[62ch] space-y-3 leading-relaxed text-foreground/90 sm:text-[17px]">
         <p>
-          I’m a full-stack developer in Dhaka and a Computer Science and Engineering
-          student at United International University. I build web applications
-          with Next.js, TypeScript, Node.js, and PostgreSQL, connecting the
-          interface people use to the APIs and data behind it.
-        </p>
-        <p>
-          I interned at <a href="#experience" className="underline underline-offset-4">Algoel</a>,
-          where I helped build an e-commerce storefront. My work covered responsive
-          UI components, API integrations for accounts, products, and orders,
-          and testing how those features behaved across browsers.
-        </p>
-        <p>
+          What happens when two drivers try to book the same parking space?
           On <a href="#parkease-bd" className="underline underline-offset-4">ParkEase BD</a>,
-          I built map-based search and worked on the reservation flow, which uses
-          PostgreSQL transactions to coordinate booking holds. I also led Team XEN’s technical work on{" "}
-          <a href="#heliobay" className="underline underline-offset-4">HelioBay</a>,
-          a solar EV charging project that won a national gold medal at FIRSO Bangladesh.
+          I built the map search and worked on the booking flow, where PostgreSQL
+          transactions coordinate reservation holds. I like working across the
+          interface and the backend because decisions on either side change what
+          the user experiences.
         </p>
         <p>
-          I’m currently exploring cybersecurity and machine learning, with an
-          interest in securing web applications and understanding how models
-          are trained and evaluated.
+          I’m a full-stack developer in Dhaka and a Computer Science and Engineering
+          student at United International University. At{" "}
+          <a href="#experience" className="underline underline-offset-4">Algoel</a>,
+          I built storefront features, connected APIs for accounts, products,
+          and orders, and helped test those flows across browsers.
+        </p>
+        <p>
+          I also led Team XEN’s technical work on{" "}
+          <a href="#heliobay" className="underline underline-offset-4">HelioBay</a>,
+          where I integrated dashboards for live telemetry and automated charging
+          control. The solar EV charging project won a national gold medal at FIRSO Bangladesh.
+        </p>
+        <p>
+          Right now, I’m exploring cybersecurity and machine learning. I’m
+          interested in how to design web apps with security in mind and how to
+          evaluate a model on data it hasn’t seen before.
         </p>
       </div>
 
