@@ -27,25 +27,22 @@ export function Hero() {
       </div>
       <div className="mt-5 max-w-[62ch] space-y-3 leading-relaxed text-foreground/90 sm:text-[17px]">
         <p>
-          What happens when two drivers try to book the same parking space?
-          On <a href="#parkease-bd" className="underline underline-offset-4">ParkEase BD</a>,
-          I built the map search and worked on the booking flow, where PostgreSQL
-          transactions coordinate reservation holds. I like working across the
-          interface and the backend because decisions on either side change what
-          the user experiences.
+          I’m a full-stack developer based in Dhaka and a Computer Science and
+          Engineering student at United International University. My favorite
+          part of building a web app is following a feature all the way through,
+          from what someone sees on screen to what happens in the API and database.
+          I work mostly with Next.js, TypeScript, Node.js, and PostgreSQL.
         </p>
         <p>
-          I’m a full-stack developer in Dhaka and a Computer Science and Engineering
-          student at United International University. At{" "}
+          At{" "}
           <a href="#experience" className="underline underline-offset-4">Algoel</a>,
-          I built storefront features, connected APIs for accounts, products,
-          and orders, and helped test those flows across browsers.
-        </p>
-        <p>
-          I also led Team XEN’s technical work on{" "}
+          I worked on an e-commerce storefront, from building features and
+          connecting APIs to testing flows across browsers. I’ve also built map
+          search and worked on booking for{" "}
+          <a href="#parkease-bd" className="underline underline-offset-4">ParkEase BD</a>{" "}
+          and led Team XEN’s technical work on{" "}
           <a href="#heliobay" className="underline underline-offset-4">HelioBay</a>,
-          where I integrated dashboards for live telemetry and automated charging
-          control. The solar EV charging project won a national gold medal at FIRSO Bangladesh.
+          which won a national gold medal at FIRSO Bangladesh.
         </p>
         <p>
           Right now, I’m exploring cybersecurity and machine learning. I’m
