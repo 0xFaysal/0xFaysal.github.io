@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader, Inter, JetBrains_Mono } from "next/font/google";
+import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -10,18 +10,12 @@ const serifFont = Newsreader({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
-  style: ["normal", "italic"],
+  style: "normal",
 });
 
 const sansFont = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
-  display: "swap",
-});
-
-const monoFont = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -46,7 +40,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "16x16 32x32 48x48 96x96" },
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
       { url: "/icon-96.png", sizes: "96x96", type: "image/png" },
     ],
     apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
@@ -139,7 +133,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${serifFont.variable} ${sansFont.variable} ${monoFont.variable}`}
+      className={`${serifFont.variable} ${sansFont.variable}`}
     >
       <head>
         <meta name="color-scheme" content="light dark" />

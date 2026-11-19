@@ -23,7 +23,7 @@ const config: Config = {
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "serif"],
         sans: ["var(--font-sans)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
-        mono: ["var(--font-mono)", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "monospace"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
       },
       keyframes: {
         shimmer: {

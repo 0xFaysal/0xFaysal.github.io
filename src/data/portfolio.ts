@@ -26,7 +26,7 @@ export interface Award {
   nextStageLocation?: string;
   description: string;
   links?: { label: string; url: string }[];
-  images: { src: string; alt?: string; caption: string }[];
+  images: { src: string; alt?: string; caption: string; fullSizeUrl?: string }[];
 }
 
 export interface ExperienceItem {
@@ -108,12 +108,12 @@ export const portfolioData: PortfolioData = {
       ],
       images: [
         {
-          src: "/team-xen/team-xen-award.jpeg",
+          src: "/team-xen/team-xen-award-display.webp",
           alt: "Team XEN receiving the Gold Medal at FIRSO Bangladesh 2026",
           caption: "Team XEN receiving the Gold Medal on stage at FIRSO Bangladesh 2026",
         },
         {
-          src: "/team-xen/team-xen-2.jpeg",
+          src: "/team-xen/team-xen-2-display.webp",
           alt: "HelioBay solar-powered smart charging station hardware prototype",
           caption: "HelioBay smart solar charging network hardware prototype demonstration",
         },
@@ -134,12 +134,13 @@ export const portfolioData: PortfolioData = {
       ],
       images: [
         {
-          src: "/robi/robi-team.jpeg",
+          src: "/robi/robi-team-display.webp",
           alt: "Team Incognito Unit at Robi Corporate Office",
           caption: "Team Incognito Unit during the on-site round at Robi Corporate Office",
         },
         {
-          src: "/robi/robi-certificate.webp",
+          src: "/robi/robi-certificate-display.webp",
+          fullSizeUrl: "/robi/robi-certificate.webp",
           alt: "Certificate of Appreciation from Robi Axiata PLC",
           caption: "Certificate of Appreciation awarded by Robi Axiata PLC",
         },

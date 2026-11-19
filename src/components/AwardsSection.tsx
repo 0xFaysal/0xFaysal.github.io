@@ -112,6 +112,11 @@ export function AwardsSection() {
                     </div>
                     <figcaption className="text-xs leading-relaxed text-muted-foreground">
                       {img.caption}
+                      {img.fullSizeUrl && (
+                        <a href={img.fullSizeUrl} className="mt-1 block w-fit underline underline-offset-4 hover:text-foreground">
+                          View full-size certificate
+                        </a>
+                      )}
                     </figcaption>
                   </figure>
                 ))}
