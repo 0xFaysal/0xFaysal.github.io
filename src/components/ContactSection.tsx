@@ -1,3 +1,4 @@
+import { Linkedin } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
 export function ContactSection() {
@@ -36,7 +37,7 @@ export function ContactSection() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 rounded-sm border border-border px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:border-muted-foreground"
         >
-          LinkedIn <span aria-hidden="true">↗</span>
+          <Linkedin aria-hidden="true" size={15} /> LinkedIn
         </a>
       </div>
     </section>

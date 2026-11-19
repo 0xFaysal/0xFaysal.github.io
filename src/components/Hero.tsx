@@ -1,4 +1,4 @@
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown, Download, Facebook, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import { portfolioData } from "@/data/portfolio";
 
@@ -57,11 +57,24 @@ export function Hero() {
       </div>
 
       <nav aria-label="Social profiles and email" className="mt-4 flex flex-wrap items-center gap-x-5 text-sm text-muted-foreground">
-        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.github}>GitHub</a>
-        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.linkedin}>LinkedIn</a>
-        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.x}>X</a>
-        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.facebook}>Facebook</a>
-        <a className="py-2 underline underline-offset-4 hover:text-foreground" href={portfolioData.socials.email}>Email</a>
+        <a className="inline-flex items-center gap-1.5 py-2 hover:text-foreground" href={portfolioData.socials.github}>
+          <Github aria-hidden="true" size={15} /> <span className="underline underline-offset-4">GitHub</span>
+        </a>
+        <a className="inline-flex items-center gap-1.5 py-2 hover:text-foreground" href={portfolioData.socials.linkedin}>
+          <Linkedin aria-hidden="true" size={15} /> <span className="underline underline-offset-4">LinkedIn</span>
+        </a>
+        <a className="inline-flex items-center gap-1.5 py-2 hover:text-foreground" href={portfolioData.socials.x}>
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.4l7.3-8.4L2 2h6.5l4.4 6.7L18.9 2zm-1.1 18h1.7L7.6 3.9H5.8L17.8 20z" />
+          </svg>
+          <span className="underline underline-offset-4">X</span>
+        </a>
+        <a className="inline-flex items-center gap-1.5 py-2 hover:text-foreground" href={portfolioData.socials.facebook}>
+          <Facebook aria-hidden="true" size={15} /> <span className="underline underline-offset-4">Facebook</span>
+        </a>
+        <a className="inline-flex items-center gap-1.5 py-2 hover:text-foreground" href={portfolioData.socials.email}>
+          <Mail aria-hidden="true" size={15} /> <span className="underline underline-offset-4">Email</span>
+        </a>
       </nav>
     </section>
   );

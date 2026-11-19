@@ -26,16 +26,25 @@
   \entry{#1}{#2}
   {\small #3\hfill #4}\par
 }
+\newcommand{\contactlink}[2]{%
+  \href{#1}{%
+    {\setlength{\unitlength}{1pt}\linethickness{0.55pt}%
+    \begin{picture}(10,6)(0,-0.5)
+      \put(2.75,2.75){\circle{3.5}}
+      \put(7.25,2.75){\circle{3.5}}
+      \put(3.5,2.75){\line(1,0){3}}
+    \end{picture}}\,\mbox{#2}}%
+}
 
 \begin{document}
 \begin{center}
   {\LARGE\bfseries Faysal Ahmed Fahim}\\[3pt]
   {\normalsize Frontend Developer | React, Next.js, TypeScript}\\[4pt]
   {\small Dhaka, Bangladesh\enspace|\enspace
-  \href{mailto:faysalfahim3@gmail.com}{faysalfahim3@gmail.com}\enspace|\enspace
-  \href{https://faysalahmed.me}{faysalahmed.me}\\[2pt]
-  \href{https://github.com/0xFaysal}{github.com/0xFaysal}\enspace|\enspace
-  \href{https://linkedin.com/in/faysal-ahmed-fahim01}{linkedin.com/in/faysal-ahmed-fahim01}}
+  \contactlink{mailto:faysalfahim3@gmail.com}{faysalfahim3@gmail.com}\enspace|\enspace
+  \contactlink{https://0xfaysal.github.io/}{0xfaysal.github.io}\\[2pt]
+  \contactlink{https://github.com/0xFaysal}{github.com/0xFaysal}\enspace|\enspace
+  \contactlink{https://www.linkedin.com/in/faysal-ahmed-fahim01}{linkedin.com/in/faysal-ahmed-fahim01}}
 \end{center}
 \vspace{-5pt}
 
